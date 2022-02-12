@@ -10,7 +10,7 @@ _zsh_smarths_cur=0
 
 # backward function
 zsh-smarths-backward() {
-    if [ "$BUFFER" == "" ]; then
+    if [ "$BUFFER" = "" ]; then
         zle .history-search-backward
         _zsh_smarths_buf0=$BUFFER
         _zsh_smarths_buf1=$BUFFER
@@ -34,7 +34,7 @@ zsh-smarths-backward() {
 
 # forward function
 zsh-smarths-forward() {
-    if [ "$BUFFER" == "" ]; then
+    if [ "$BUFFER" = "" ]; then
         zle .history-search-forward
         _zsh_smarths_buf0=$BUFFER
         _zsh_smarths_buf1=$BUFFER
